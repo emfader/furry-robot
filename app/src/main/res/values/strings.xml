@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Festapp</string>
+    <string name="event_name_">Event name:</string>
+    <string name="event_name_desc_">Event Name</string>
+    <string name="event_date_">Event date:</string>
+    <string name="event_time_">Event time:</string>
+    <string name="event_create_">Create event</string>
+</resources>
