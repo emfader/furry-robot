@@ -2,8 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CreateEvent">
+    android:layout_height="match_parent">
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/outer_frame"
@@ -51,11 +50,11 @@
                 android:layout_marginTop="6dp"
                 android:text="@string/event_date_"
                 android:textAppearance="@style/event_name_"/>
-            <EditText
+            <TextView
+                android:onClick="pickDate"
                 android:id="@+id/event_date_text_"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:inputType="date"
                 android:layout_marginRight="9dp"
                 android:layout_marginEnd="9dp"
                 android:layout_marginStart="9dp"
@@ -73,11 +72,11 @@
                 android:layout_marginTop="6dp"
                 android:text="@string/event_time_"
                 android:textAppearance="@style/event_name_"/>
-            <EditText
+            <TextView
+                android:onClick="pickTime"
                 android:id="@+id/event_time_text_"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:inputType="date"
                 android:layout_marginRight="9dp"
                 android:layout_marginEnd="9dp"
                 android:layout_marginStart="9dp"
@@ -86,6 +85,7 @@
                 android:background="@drawable/edittext"
                 tools:ignore="LabelFor" />
             <Button
+                android:onClick="createEvent"
                 android:id="@+id/event_button_"
                 android:text="@string/event_create_"
                 android:textColor="@android:color/white"
@@ -96,8 +96,7 @@
                 android:layout_marginStart="9dp"
                 android:layout_marginLeft="9dp"
                 android:layout_marginTop="25dp"
-                android:background="@drawable/button"
-                tools:ignore="LabelFor" />
+                android:background="@drawable/button"/>
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
